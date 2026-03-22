@@ -27,7 +27,7 @@
 Identify open ports, services, and potential entry points.
 command used: nmap -Pn -A  IP 
 
-![[Pasted image 20260318125042.png]]
+![Nmap scan](images/rootme/nmap%20scan.png)
 
 
 
@@ -39,20 +39,22 @@ The machine exposes
 Discover hidden directories and web functionality.
 Command used:  gobuster dir --wordlist=/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -u http://IP
 
-![[Pasted image 20260318124948.png]]
+![Gobuster Scan](images/rootme/gobuster%20scan.png)
 
 
 /panel is a login or a control panel which is also a hidden directory displayed by gobuster tool
 
 5. INITIAL ACCESS
 
-![[Pasted image 20260318125735.png]]
+![Upload Functionality](images/rootme/upload%20functionality.png)
+
 The ip shows the vulnerable website
-![[Pasted image 20260318130046.png]]
+![Shell Upload](images/rootme/upload%20shell.png)
+
 The upload panel has an upload functionality where we can upload a shell for command line access
 An upload of a shell.php file was done to gain a reverse shell 
 
-![[Pasted image 20260318150236.png]]
+![Payload Configuration](images/rootme/capturing%20requests%20burpsuit.png)
 
 During payload configuration i was able to change to my attacker ip address to initiate a netcat listener
 ![[Pasted image 20260318150745.png]]
