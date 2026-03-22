@@ -46,32 +46,34 @@ Command used:  gobuster dir --wordlist=/usr/share/wordlists/dirbuster/directory-
 
 5. INITIAL ACCESS
 
-![Upload Functionality](images/rootme/upload%20functionality.png)
+![Target Address](images/rootme/target%20address.png)
 
 The ip shows the vulnerable website
-![Shell Upload](images/rootme/upload%20shell.png)
+![Upload Functionality](images/rootme/upload%20functionality.png)
 
 The upload panel has an upload functionality where we can upload a shell for command line access
 An upload of a shell.php file was done to gain a reverse shell 
 
 ![Payload Configuration](images/rootme/payload%20configuration.png)
 
-During payload configuration i was able to change to my attacker ip address to initiate a netcat listener
-![[Pasted image 20260318150745.png]]
+During payload configuration i was able to change to my attacker ip address to initiate a netcat listener later on port 1234
+
+![Upload Shell](images/rootme/upload%20shell.png)
+
  After uploading the reverse shell the website declined a php but we can introduce new file formats like bak, php5 using burpsuite
  
-![[Pasted image 20260318152701.png]]
+![Burp Requests](images/rootme/capturing%20requests%20burpsuit.png)
 
  using burp proxy capture the request through intercept and send to intruder in burpsuit
-![[Pasted image 20260318154345.png]]
+![Payload Upload](images/rootme/payload%20upload.php.png)
 
 select php in sniper attack and add different file types 
 
-![[Pasted image 20260318154536.png]]
+![Payload Upload](images/rootme/payload%20upload.png)
 
 we have successfully uploaded our reverse shells to the target 
 
-![[Pasted image 20260318154853.png]]
+![Payload Uploaded](images/rootme/payload%20uploaded.png)
 
 6. SHELL STABILIZATION
 Set a netcat listener on port 1234 
