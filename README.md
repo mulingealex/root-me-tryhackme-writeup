@@ -65,11 +65,11 @@ During payload configuration i was able to change to my attacker ip address to i
 ![Burp Requests](images/rootme/capturing%20requests%20burpsuit.png)
 
  using burp proxy capture the request through intercept and send to intruder in burpsuit
-![Payload Upload](images/rootme/payload%20upload.php.png)
+![Payload Upload](images/rootme/payload%20upload.png)
 
 select php in sniper attack and add different file types 
 
-![Payload Upload](images/rootme/payload%20upload.png)
+![Payloads](images/rootme/payloads.png)
 
 we have successfully uploaded our reverse shells to the target 
 
