@@ -54,7 +54,7 @@ The ip shows the vulnerable website
 The upload panel has an upload functionality where we can upload a shell for command line access
 An upload of a shell.php file was done to gain a reverse shell 
 
-![Payload Configuration](images/rootme/capturing%20requests%20burpsuit.png)
+![Payload Configuration](images/rootme/payload%20configuration.png)
 
 During payload configuration i was able to change to my attacker ip address to initiate a netcat listener
 ![[Pasted image 20260318150745.png]]
